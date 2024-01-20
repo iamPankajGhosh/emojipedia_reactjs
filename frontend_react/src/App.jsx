@@ -60,14 +60,14 @@ function App() {
       <h2>Meaning: {meaning}</h2>
       <h3>Emoji pad</h3>
       {emojis.map((emoji, index) => (
-        <span
+        <button
           key={index}
           onClick={() => {
             handleEmojiClick(emoji);
           }}
         >
           {emoji}
-        </span>
+        </button>
       ))}
     </>
   );
